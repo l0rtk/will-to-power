@@ -119,3 +119,21 @@ mh60:
 		Facings: 8
 	icon:
 		Filename: mh60icon.shp
+
+dron:
+	idle:
+		Filename: heli.shp
+		Facings: 32
+		UseClassicFacings: True
+		Scale: 0.6
+	rotor:
+		Filename: lrotor.shp
+		Length: 4
+		Scale: 0.6
+	slow-rotor:
+		Filename: lrotor.shp
+		Start: 4
+		Length: 8
+		Scale: 0.6
+	icon:
+		Filename: heliicon.shp

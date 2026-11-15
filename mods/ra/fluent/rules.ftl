@@ -121,6 +121,13 @@ actor-heli =
       Strong vs Buildings, Vehicles and Aircraft
       Weak vs Infantry
 
+actor-dron =
+    .name = Kamikaze Drone
+    .description =
+    Cheap flying bomb that destroys itself on its target.
+      Strong vs Vehicles and Buildings
+      Cannot attack Aircraft
+
 actor-hind =
     .name = Hind
     .description =

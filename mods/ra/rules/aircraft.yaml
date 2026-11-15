@@ -548,3 +548,47 @@ MH60:
 	WithProductionIconOverlay:
 		Types: Veterancy
 		Prerequisites: aircraft.upgraded
+
+DRON:
+	Inherits: ^Helicopter
+	Buildable:
+		Queue: Aircraft
+		BuildAtProductionType: Helicopter
+		BuildPaletteOrder: 45
+		Prerequisites: ~hpad, ~techlevel.medium
+		Description: actor-dron.description
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: actor-dron.name
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Health:
+		HP: 3000
+	RevealsShroud:
+		Range: 6c0
+		Type: GroundPosition
+	Armament:
+		Weapon: DroneStrike
+	AttackAircraft:
+		FacingTolerance: 512
+		AttackType: Hover
+	GrantConditionOnAttack:
+		Condition: triggered
+	KillsSelf:
+		RequiresCondition: triggered
+	Aircraft:
+		TurnSpeed: 28
+		Speed: 180
+	WithIdleOverlay@ROTORAIR:
+		Offset: 0,0,51
+		Sequence: rotor
+		RequiresCondition: airborne
+	WithIdleOverlay@ROTORGROUND:
+		Offset: 0,0,51
+		Sequence: slow-rotor
+		RequiresCondition: !airborne
+	Selectable:
+		DecorationBounds: 896, 896
+	-EjectOnDeath:
+	-SpawnActorOnDeath:

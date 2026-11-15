@@ -259,3 +259,25 @@ MADTankDetonate:
 		Explosions: med_explosion
 		ImpactSounds: mineblo1.aud
 		ImpactActors: false
+
+DroneStrike:
+	ValidTargets: Ground, Water, GroundActor, WaterActor
+	ReloadDelay: 25
+	Range: 0c768
+	Projectile: InstantHit
+	Warhead@1Dam: SpreadDamage
+		Spread: 341
+		Damage: 18000
+		ValidTargets: GroundActor, WaterActor
+		Versus:
+			None: 60
+			Wood: 75
+			Concrete: 50
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+		ValidTargets: Ground, Infantry
+	Warhead@3Eff: CreateEffect
+		Explosions: self_destruct
+		ImpactSounds: kaboom22.aud
+		ValidTargets: Ground, GroundActor, WaterActor, Trees
