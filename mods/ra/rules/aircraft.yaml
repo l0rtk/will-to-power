@@ -580,6 +580,9 @@ DRON:
 	Aircraft:
 		TurnSpeed: 28
 		Speed: 180
+	AmbientSound:
+		SoundFiles: dronbuzz.wav
+		RequiresCondition: airborne
 	Selectable:
 		DecorationBounds: 896, 896
 	-EjectOnDeath:
