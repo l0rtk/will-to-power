@@ -580,14 +580,6 @@ DRON:
 	Aircraft:
 		TurnSpeed: 28
 		Speed: 180
-	WithIdleOverlay@ROTORAIR:
-		Offset: 0,0,51
-		Sequence: rotor
-		RequiresCondition: airborne
-	WithIdleOverlay@ROTORGROUND:
-		Offset: 0,0,51
-		Sequence: slow-rotor
-		RequiresCondition: !airborne
 	Selectable:
 		DecorationBounds: 896, 896
 	-EjectOnDeath:
